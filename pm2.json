@@ -1,0 +1,13 @@
+{
+  "apps": [
+    {
+      "name": "backend",
+      "cwd": "./",
+      "instances": "max",
+      "exec_mode": "cluster",
+      "script": "node",
+      "args": "dist/server",
+      "max_memory_restart": "1024M"
+    }
+  ]
+}

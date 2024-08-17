@@ -1,0 +1,41 @@
+{
+  "ts-node": {
+    "require": ["tsconfig-paths/register"],
+    "swc": true
+  },
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": false,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@bull": ["bull/index"],
+      "@common/*": ["common/*"],
+      "@config/*": ["config/*"],
+      "@controller/*": ["controller/*"],
+      "@cron": ["cron/index"],
+      "@graphql/*": ["graphql/*"],
+      "@middleware": ["middleware/index"],
+      "@models": ["models/index"],
+      "@routes": ["routes/index"],
+      "@routes/*": ["routes/*"],
+      "@utils/*": ["utils/*"],
+      "@validation/*": ["validation/*"]
+    },
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules", "public", "assets", "dist"]
+}
